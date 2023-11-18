@@ -6,3 +6,6 @@ class Staff:
 
     def __str__(self):
         return f"{self.name}({self.position})"
+    
+    def __eq__(self,other):
+        return self.staff_id == other.staff_id
